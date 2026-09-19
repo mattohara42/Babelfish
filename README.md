@@ -1,5 +1,7 @@
 # Babelfish
 
+**Live: [babelfish-translator.netlify.app](https://babelfish-translator.netlify.app/)**
+
 > "The Babel fish is small, yellow, leech-like, and probably the oddest
 > thing in the universe." It translates. It does not promise the result
 > will be *pleasant*.
@@ -58,9 +60,10 @@ tests/dialects.test.mjs
 
 ## Deploying
 
-It's a static site with no server-side dependencies, so any static host
-works (Netlify, GitHub Pages, etc.) — point it at the repo root, no build
-command needed.
+Deployed on Netlify, linked to this repo's `main` branch — every push
+there rebuilds and republishes automatically, no build command needed
+since it's a static site. Any other static host (GitHub Pages, etc.)
+works the same way if you'd rather point it there instead.
 
 ## Disclaimer
 
