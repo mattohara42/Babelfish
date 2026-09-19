@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Babelfish — Pan-Galactic Translator</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐟</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="guide">
+    <header class="guide-header">
+      <div class="dont-panic">DON'T PANIC</div>
+      <h1>THE BABEL FISH</h1>
+      <p class="tagline">
+        Small, yellow, leech-like, and probably the oddest thing in the
+        universe. Insert one into your ear. Type below. Nothing will make
+        more sense, but it will sound a great deal more official.
+      </p>
+    </header>
+
+    <section class="fish-tray" aria-hidden="true">
+      <div id="fish" class="fish">🐟</div>
+      <div id="fish-status" class="fish-status">awaiting insertion</div>
+    </section>
+
+    <section class="console">
+      <label for="input">What would you like translated?</label>
+      <textarea id="input" rows="5" placeholder="Type something. Anything. It won't help.">The quarterly report is late again and nobody wants to own the decision.</textarea>
+
+      <label for="dialect">Translate into:</label>
+      <select id="dialect"></select>
+
+      <div class="controls">
+        <button id="translate-btn" type="button">Insert Babel Fish &amp; Translate</button>
+        <button id="improbability-btn" type="button" title="Engage the Infinite Improbability Drive">
+          Improbability Drive
+        </button>
+      </div>
+
+      <label for="output">Translation:</label>
+      <pre id="output" class="output" aria-live="polite">(Nothing translated yet. This is, statistically, the most likely state of the universe.)</pre>
+    </section>
+
+    <footer class="guide-footer">
+      <p>
+        A wholly inaccurate, entirely unofficial fan toy inspired by the
+        works of Douglas Adams and Monty Python. Mostly harmless.
+      </p>
+    </footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
