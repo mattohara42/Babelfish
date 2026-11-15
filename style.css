@@ -151,6 +151,29 @@ button:hover {
   border: 1px solid var(--guide-accent);
 }
 
+button.secondary {
+  background: transparent;
+  color: var(--guide-accent);
+  border: 1px solid var(--guide-border);
+  padding: 6px 12px;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+button.secondary:hover {
+  border-color: var(--guide-accent);
+}
+
+.output-tools {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.output-tools[hidden] {
+  display: none;
+}
+
 .output {
   background: #060a06;
   border: 1px solid var(--guide-border);
