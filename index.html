@@ -14,8 +14,9 @@
       <h1>THE BABEL FISH</h1>
       <p class="tagline">
         Small, yellow, leech-like, and probably the oddest thing in the
-        universe. Insert one into your ear. Type below. Nothing will make
-        more sense, but it will sound a great deal more official.
+        universe. Insert one into your ear. It translates both ways: plain
+        speech into officialese, and officialese back into what people
+        actually meant. The second direction is the one that starts wars.
       </p>
     </header>
 
@@ -26,9 +27,9 @@
 
     <section class="console">
       <label for="input">What would you like translated?</label>
-      <textarea id="input" rows="5" placeholder="Type something. Anything. It won't help.">The quarterly report is late again and nobody wants to own the decision.</textarea>
+      <textarea id="input" rows="5" placeholder="Type something. Anything. It won't help.">Hope this email finds you well! Going forward, we're excited to announce some exciting changes to the team. The printer is broken again and the old project is dead. Let's circle back on the budget next week. Thanks in advance.</textarea>
 
-      <label for="dialect">Translate into:</label>
+      <label for="dialect">Translate with:</label>
       <select id="dialect"></select>
 
       <div class="controls">
@@ -40,6 +41,12 @@
 
       <label for="output">Translation:</label>
       <pre id="output" class="output" aria-live="polite">(Nothing translated yet. This is, statistically, the most likely state of the universe.)</pre>
+
+      <div id="output-tools" class="output-tools" hidden>
+        <button id="hear-btn" class="secondary" type="button" aria-pressed="false">🔊 Hear it</button>
+        <button id="copy-link-btn" class="secondary" type="button">🔗 Copy link</button>
+        <button id="feed-back-btn" class="secondary" type="button" title="Put this translation back in the box, so you can translate the translation">↺ Feed it back in</button>
+      </div>
     </section>
 
     <footer class="guide-footer">
